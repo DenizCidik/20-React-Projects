@@ -1,3 +1,3 @@
 ## A list of projects i developed to improve my react skills
 
-Feel free to use anyone of them
+50 react projects collection i will develop to improve my react skills
