@@ -22,13 +22,14 @@ const Button = ({ value }) => {
   const { calc, setCalc } = useContext(CalcContext);
   
   const commaClick = () => {
-    
   }
 
   const handleBtnClick = () => {
+    console.log(value)
 
     const results = {
       '.': commaClick
+
     }
     
     return results[value]()
