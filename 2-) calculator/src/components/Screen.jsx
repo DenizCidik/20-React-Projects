@@ -1,11 +1,11 @@
-import React, { useContext } from 'react'
+import { useContext } from 'react'
 import { CalcContext } from '../context/CalcContext'
 
 const Screen = () => {
-const {calc} = useContext(CalcContext);
+const { calc } = useContext(CalcContext);
 
   return (
-    <div className='result'>321321</div>
+    <div className='result'>{calc.num ? calc.num: calc.res}</div>
   )
 }
 
