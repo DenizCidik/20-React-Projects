@@ -10,7 +10,7 @@ const Hero = () => {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setShowAnimation(true)
-    }, 1000);
+    }, 500);
 
     return () => {
       clearTimeout(timeout)
@@ -19,7 +19,7 @@ const Hero = () => {
   })
 
   const animationVariants = {
-    visible: {y:[0,30,0], opacity:1}
+    visible: {y:[0,24,0], opacity:1},
     
   }
 
@@ -50,11 +50,11 @@ const Hero = () => {
 
         <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
           <a href="#about">
-            <div className='w-[30px] h-[64px] rounded-3xl border-2 border-forborder flex justify-center items-start p-1'  onClick={console.log(showAnimation)}>
+            <div className='w-[30px] h-[64px] rounded-3xl border-2 border-forborder flex justify-center items-start p-1'>
               
-                <motion.dev  animate={showAnimation ? 'visible' : 'hidden'}
+                <motion.div  animate={showAnimation ? 'visible' : 'hidden'}
                 transition={{
-                  duration: 2,
+                  duration: 1.4,
                   repeat: Infinity,
                   repeatType: 'loop',
                   repeatDelay: 0,
