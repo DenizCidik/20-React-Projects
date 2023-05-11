@@ -17,11 +17,13 @@ const Ball = (props) => {
         <icosahedronBufferGeometry args={[1,1]}/>
         <meshStandardMaterial 
         color='#fff8eb'
+        polygonOffset
+        polygonOffsetFactor={-5}
         flatShading
         /> 
         <Decal 
         position={[0,0,1]}
-        rotation={[2 * Math.PI, 0, 12.55]}
+        rotation={[2 * Math.PI, 0, 25.1]}
         flatShading
         map={decal}
         />
