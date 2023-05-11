@@ -17,8 +17,6 @@ const Ball = (props) => {
         <icosahedronBufferGeometry args={[1,1]}/>
         <meshStandardMaterial 
         color='#fff8eb'
-        polygonOffset
-        polygonOffsetFactor={-5}
         flatShading
         /> 
         <Decal 
